@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+int main (){
+    /**Variavel que representa o numero do dia que sera informado*/
+    int num;
+    
+    printf("Digite um numero correspondente a um dia da semana: ");
+    scanf("%d",&num);
+    /**Rotina que avalia o num e retorna o dia da semana*/
+    if(num >=1|| num<=7 ){
+        printf ("Erro! Parametro inválido!"); 
+    }else{
+        dia_semana(num);
+    }
+    return 0;
+}
